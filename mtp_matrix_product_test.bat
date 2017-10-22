@@ -1,0 +1,9 @@
+@echo off
+set "MTP_MATRIX_PRODUCT=Release\mtp_matrix_product.exe"
+
+echo Running 1 thread...
+"%MTP_MATRIX_PRODUCT%" 1 > mtp_matrix_product.csv
+echo Running 2 threads...
+"%MTP_MATRIX_PRODUCT%" 2 >> mtp_matrix_product.csv
+echo Running 4 threads...
+"%MTP_MATRIX_PRODUCT%" 4 >> mtp_matrix_product.csv
